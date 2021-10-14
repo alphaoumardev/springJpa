@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class SpringJpaApplication {
-
+public class SpringJpaApplication
+{
     public static void main(String[] args)
     {
         SpringApplication.run(SpringJpaApplication.class, args);
@@ -18,10 +18,8 @@ public class SpringJpaApplication {
     {
         return args->
         {
-            Student me =new Student("Oumou","Aminata","oumargamil.com",22);
+            Student me =new Student("Oumou","Kadiatou","oumargamil.com",22);
             repo.save(me);
         };
-
-
     }
 }
